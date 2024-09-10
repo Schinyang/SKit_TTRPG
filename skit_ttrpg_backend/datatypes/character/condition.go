@@ -1,5 +1,8 @@
 package character
 
 type Condition interface {
-	apply(c *Character)
+	Name() string
+	Apply(*Character)
+	Remove(*Character)
+	Description() string
 }
