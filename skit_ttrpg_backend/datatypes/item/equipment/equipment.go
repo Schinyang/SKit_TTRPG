@@ -1,7 +1,10 @@
 package equipment
 
+import "skit_ttrpy_backend/datatypes/character"
+
 type Slot int
-const {
+
+const (
 	HeadSlot = iota
 	CapeSlot
 	ClothingSlot
@@ -9,10 +12,11 @@ const {
 	AmuletSlot
 	BootSlot
 	RingSlot
-} 
-type equipment interface(){
-	Equip(*Character)
-	Unequip(*Character)
+)
+
+type equipment interface {
+	Equip(character *character.Character)
+	Unequip(*character.Character)
 	Description() string
 	getSlot() Slot
 }

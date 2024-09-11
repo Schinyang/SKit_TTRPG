@@ -2,11 +2,11 @@ package character
 
 type SkillProficiency int
 
-const{
+const (
 	Insight = iota
 	Society
 	Nature
-	Animal Handling
+	AnimalHandling
 	Persuasion
 	Deception
 	Performance
@@ -16,15 +16,14 @@ const{
 	Philosophy
 	Athletics
 	Acrobatics
-	MonsterAnatomy
-	Alchol Resistance
+	AlcholResistance
 	Technology
-}
+)
 
 type CombatProficiency int
 
-const {
-	LightArmour
+const (
+	LightArmour = iota
 	MediumArmour
 	HeavyArmour
 	MartialWeapons
@@ -32,14 +31,14 @@ const {
 	Will
 	Reflex
 	Fortitude
-}
+)
 
 type ProficiencyType int
 
-const {
+const (
 	Untrained = iota
 	Trained
 	Expert
 	Master
 	Legendary
-}
+)
