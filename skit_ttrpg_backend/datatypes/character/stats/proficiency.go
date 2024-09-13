@@ -1,4 +1,4 @@
-package character
+package stats
 
 type SkillProficiency int
 
